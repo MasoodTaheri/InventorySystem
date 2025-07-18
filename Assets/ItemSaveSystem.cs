@@ -32,6 +32,7 @@ public static class ItemSaveSystem
 
     public static void UpdateItem(string itemId, int addCount)
     {
+        Debug.Log($"{itemId}X{addCount} bought");
         var items = LoadItems();
         var existing = items.FirstOrDefault(x => x.itemId == itemId);
 
