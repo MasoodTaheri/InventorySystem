@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class ShopManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private List<ItemBaseData> _availableItems;
+   
+    
+
+    private void Start()
     {
-        
+        Initialize();
+    }
+    public void Initialize()
+    {
+        _availableItems = new List<ItemBaseData>();
+        _availableItems.AddRange(Resources.LoadAll<ItemBaseData>("Data/ShopItems"));
     }
 
-    // Update is called once per frame
-    void Update()
+    public List<ItemBaseData> GetAllItems()
     {
-        
+        return _availableItems;
     }
 }

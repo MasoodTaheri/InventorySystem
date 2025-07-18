@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
-    [SerializeField] private List<UIPanel> _panels;
+    [SerializeField] private UIPanel _ShopPanel;
     [SerializeField] private List<UIPanel> _lastpanel;
 
     void Start()
@@ -28,6 +28,11 @@ public class MenuManager : MonoBehaviour
     {
         panel.Hide();
         _lastpanel.Remove(panel);
+    }
+
+    public void ShowShop()
+    {
+        OpenPanel(_ShopPanel);
     }
 
     
