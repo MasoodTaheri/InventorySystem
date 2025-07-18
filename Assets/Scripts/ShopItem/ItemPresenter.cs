@@ -8,14 +8,11 @@ public class ItemPresenter : MonoBehaviour
 
     [SerializeField] private ItemBaseData _model;
     [SerializeField] private ItemView _view;
-    public Action<int> Purchase;
 
-    private void OnEnable()
+    public void Initialize(ItemBaseData model, Action<int> Purchase)
     {
+        _model = model;
         _view.Initialize(_model, Purchase);
-    }
-    public void Initialize()
-    {
         _view.SetPerchase(Purchase);
     }
 }

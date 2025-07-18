@@ -14,8 +14,8 @@ public class ItemView : MonoBehaviour
     public void Initialize(ItemBaseData data, Action<int> purchase)
     {
         _title.text = data.itemName;
-        _description.text = data.itemName;
-        _price.text = data.itemName;
+        _description.text = data.description;
+        _price.text = data.price.ToString()+" $";
         _image.sprite = data.icon;
        
         itemid = data.id;
