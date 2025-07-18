@@ -5,13 +5,7 @@ using UnityEngine;
 public class ShopManager : MonoBehaviour
 {
     [SerializeField] private List<ItemBaseData> _availableItems;
-   
-    
 
-    private void Start()
-    {
-        Initialize();
-    }
     public void Initialize()
     {
         _availableItems = new List<ItemBaseData>();

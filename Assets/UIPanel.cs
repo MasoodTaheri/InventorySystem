@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class UIPanel : MonoBehaviour
 {
@@ -25,4 +26,6 @@ public class UIPanel : MonoBehaviour
         canvasGroup.blocksRaycasts = false;
         gameObject.SetActive(false);
     }
+
+  
 }

@@ -11,7 +11,7 @@ public class ShopPanel : UIPanel
     [SerializeField] private ShopManager _manager;
     [SerializeField] private List<ItemPresenter> _items;
     [SerializeField] private PurchasePanel _purchasePanel;
-    [SerializeField] private int _userCoin = 100;
+    [SerializeField] private int _userCoin = 0;
 
     public override void Show()
     {
@@ -32,6 +32,11 @@ public class ShopPanel : UIPanel
             _items.Add(temp);
             _view.AddItem(temp);
         }
+    }
+
+    internal void SetUserCoinCount(int userCoin)
+    {
+        _userCoin = userCoin;
     }
 
     private void AskToPurchase(int id)

@@ -5,19 +5,9 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
-    [SerializeField] private UIPanel _ShopPanel;
+    [SerializeField] private ShopPanel _ShopPanel;
     [SerializeField] private List<UIPanel> _lastpanel;
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void OpenPanel(UIPanel panel)
     {
@@ -35,5 +25,8 @@ public class MenuManager : MonoBehaviour
         OpenPanel(_ShopPanel);
     }
 
-    
+    internal void SetCoin(int userCoin)
+    {
+        _ShopPanel.SetUserCoinCount(userCoin);
+    }
 }
