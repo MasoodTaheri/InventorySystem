@@ -7,7 +7,7 @@ using UnityEngine;
 public class ShopPanel : UIPanel
 {
     [SerializeField] private ShopView _view;
-    [SerializeField] private ItemPresenter _shopItemPrefab;
+    [SerializeField] private ShopItemPresenter _shopItemPrefab;
     [SerializeField] private ShopManager _manager;
     [SerializeField] private List<ItemPresenter> _items;
 
@@ -32,8 +32,8 @@ public class ShopPanel : UIPanel
         }
     }
 
-    private void AskToPurchase(int obj)
+    private void AskToPurchase(int id)
     {
-        throw new NotImplementedException();
+        ItemSaveSystem.UpdateItem(id.ToString(), 1);
     }
 }

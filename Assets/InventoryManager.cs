@@ -1,18 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Purchasing;
 
 public class InventoryManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private List<ItemCount> items = new List<ItemCount>();
+    internal List<ItemCount> GetAllItems()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        items.Clear();
+        items.AddRange(ItemSaveSystem.LoadItems());
+        return items;
     }
 }
