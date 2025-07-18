@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 7584199809544560397}
   - component: {fileID: 4454445628680438732}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Purchase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -973,8 +973,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.000015258789, y: 128.48593}
-  m_SizeDelta: {x: 0, y: 134.953}
+  m_AnchoredPosition: {x: 0.96769714, y: 128.48593}
+  m_SizeDelta: {x: -32.8105, y: 134.953}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &4083251059165471969
 CanvasRenderer:
@@ -1004,9 +1004,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Descriptio
-
-    De'
+  m_text: Spell to make them freez Spell to make them freezSpell to make them freezSpell
+    to make them freezSpell to make them freezSpell to make them freezSpell to make
+    them freez
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7fc53bf90c228bb4895eca8a01ab949d, type: 2}
   m_sharedMaterial: {fileID: -4041066429169941223, guid: 7fc53bf90c228bb4895eca8a01ab949d, type: 2}
@@ -1033,11 +1033,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
+  m_fontSize: 15.1
   m_fontSizeBase: 25
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 10.33
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -1049,7 +1049,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
+  m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
